@@ -1,0 +1,19 @@
+#include <stdio.h>
+struct Date {
+    int day;
+    int month;
+    int year;
+};
+struct Employee {
+    int id;
+    char name[20];
+    struct Date doj;
+};
+int main() {
+    struct Employee emp = {101, "Arun", {15, 8, 2023}};
+    printf("Employee ID: %d\n", emp.id);
+    printf("Name: %s\n", emp.name);
+    printf("Date of Joining: %02d/%02d/%d\n", emp.doj.day, emp.doj.month, emp.doj.year);
+    printf("\nREG NO:25331A05I5");
+    return 0;
+}
